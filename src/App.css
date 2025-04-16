@@ -1,22 +1,49 @@
 .container {
     display: flex;
-    height: 100%;
-    width: 100%;
+    flex-direction: row;
+    height: 100vh;
+    box-sizing: border-box;
   }
   
   .editor-pane {
     width: 50%;
-    height: 100%;
     border-right: 1px solid #ddd;
-    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
   }
   
   .preview-pane {
-    width: 50%;
-    height: 100%;
     padding: 1rem;
+    background-color: #fff;
     overflow-y: auto;
-    background: #f9f9f9;
-    color: #222;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Break long words if necessary */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .preview-pane pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+  }
+  
+  .editor-pane .cm-editor {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .editor-pane,
+    .preview-pane {
+      width: 100%;
+      border-right: none; /* Remove right border when stacked */
+    }
   }
   
