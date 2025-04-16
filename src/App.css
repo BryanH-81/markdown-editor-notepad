@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .editor-pane {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    overflow: auto;
+  }
+  
+  .preview-pane {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    overflow-y: auto;
+    background: #f9f9f9;
+    color: #222;
+  }
+  
