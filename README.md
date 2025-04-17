@@ -88,13 +88,3 @@ Preview: On the right panel, you will see the rendered markdown output.
 
 Editing: You can type freely in the editor pane, and the preview will update in real-time.
 
-Contributing
-Fork the repository.
-
-Create a new branch for your feature or bugfix (git checkout -b feature-name).
-
-Commit your changes (git commit -am 'Add new feature').
-
-Push to the branch (git push origin feature-name).
-
-Create a new pull request.
